@@ -4,27 +4,68 @@
         
         <style>
             #pad {
-                padding-top: 200px;
+                padding-top: 50px;
                 text-align: center;
                 border: 20px 200px;
                 
                 }
-            #buttons {
+            .button-group {
                 
                 text-align: center;
                 padding-top: 20px;
+
             }
             
+            .button {
+                background-color: rgb(243, 243, 243);
+                font-size: 18px;
+
+
+
+            }
             .longBar {
                 
                 width: 500px;
                 height: 32px;
+                border-radius: 25px;
             
             }
 
+            .button-group input[type="submit"], input[type="button"] {
+                background-color: rgb(250, 250, 250);
+                font-size: 14px;
+                font-family: arial, sans-serif;
+                padding:7px;
+                padding-left: 12px;
+                padding-right: 12px;
+                border:none;
+                margin-left: 12px;
+            }
+
+
+
             .logo {
                 text-align: center;
-                font-size: x-large;
+                font-size: 90px;
+                white-space: nowrap;
+                padding-top: 175px;
+                font-family: arial, sans-serif;
+            }
+            
+            #blue {
+                color: rgb(42, 125, 233);
+            }
+
+            #yellow {
+                color: #e6ae14 ;
+            }
+
+            #red {
+                color:rgb(241, 50, 50);
+            }
+
+            #green {
+                color:rgb(72, 180, 72);
             }
                 
         </style>
@@ -32,11 +73,15 @@
     </head>
     <body>
         
+        <div class="logo">
+            <span id="blue">G</span><span id="red">o</span><span id="yellow">o</span
+                ><span id="blue">g</span><span id="green">l</span><span id="red">e</span>
+        </div>
         <div id="pad">
 
             <form action="https://google.com/search">
                 <input type="text" name="q" class="longBar">
-                <div id="buttons">
+                <div class="button-group">
                     <input type="submit" value="Google Search">
                     <input type="button" value="I'm feeling Lucky">
                 </div>  
