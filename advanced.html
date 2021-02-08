@@ -2,6 +2,26 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css"> 
+        <style>
+            #vert {
+                display:inline-block;
+                text-align:left;
+            }
+
+            .adv-bar {
+                height: 20px;
+                width: 400px;
+                margin-inline-start:150px;
+                margin-top:25px;
+            }
+
+            .adv-prompt {
+                padding-top:40px;
+                display:inline-block;
+                width:200px;
+            }
+            
+        </style>
     </head>
     <body>   
         <div class="button-group" id = "nav-buttons">
@@ -15,15 +35,27 @@
             <span id="blue">G</span><span id="red">o</span><span id="yellow">o</span
                 ><span id="blue">g</span><span id="green">l</span><span id="red">e</span>
         </div>
-        <div id="pad">
-
-            <form action="https://google.com/search">
-                <input type="text" name="as_q" class="longBar">
-                <input type="text" name="as_epq">
-                <input type="text" name="as_oq">
-                <input type="text" name="as_eq">
-                <input type="submit" value="Advanced Search">
-                
-            </form>
+        <div>
+            Find pages with...
         </div>
+        <form id="vert" action="https://google.com/search">
+            <div>
+                <label for="as_q" class="adv-prompt">all these words:</label>
+                <input class="adv-bar" type="text" name="as_q">
+            </div>
+            <div>
+                <label for="as_epq" class="adv-prompt">this exact word or phrase:</label>
+                <input class="adv-bar" id="vert" type="text" name="as_epq">
+            </div>
+            <div>
+                <label for="as_oq" class="adv-prompt">any of these words:</label>
+                <input class="adv-bar" type="text" name="as_oq">
+            </div>
+            <div>
+                <label for="as_eq" class="adv-prompt">none of these words:</label>
+                <input class="adv-bar" type="text" name="as_eq">
+            </div>
+            <input type="submit" value="Advanced Search">
+            
+        </form>
     </body>
