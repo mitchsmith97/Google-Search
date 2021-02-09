@@ -19,6 +19,10 @@
 
 
 }
+
+body{
+    margin: 0px;
+}
 .longBar {
     
     width: 500px;
@@ -34,10 +38,12 @@
     font-size: 14px;
     font-family: arial, sans-serif;
     padding:7px;
+
     padding-left: 12px;
     padding-right: 12px;
     border:none;
     margin-left: 12px;
+    vertical-align: center;
 }
 
 #nav-buttons {
@@ -68,3 +74,90 @@
     color:rgb(72, 180, 72);
 }
     
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+
+.left-column{
+    text-align: left;
+}
+
+.right-column {
+    text-align: right;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 60 px
+}
+
+#vert {
+    display:inline-block;
+    text-align:left;
+    margin: 40px;
+}
+
+.adv-bar {
+    height: 26px;
+    width: 450px;
+    margin-inline-start:0px;
+    margin-top:14px;
+    border: 1px solid rgb(207, 207, 207);
+    
+}
+
+.adv-prompt {
+    padding-top:8px;
+    display:inline-block;
+    vertical-align: middle;
+    width:162px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px
+}
+
+#adv-logo{
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mini-logo {
+    font-size: 36px;
+    margin-left: 6px;
+}
+
+#grey-row {
+    background-color: rgba(233, 231, 231, 0.815);
+}
+
+#thin-grey-line {
+    border-bottom: 1px solid #ebebeb;
+
+}
+
+#prompt-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#blue-button {
+    color: white;
+    background-color: #4d90fe;
+    margin-left:490px;
+    height: 28px;
+    margin-top: 10px;
+    font-size:12px;
+    font-weight: bold;
+    border: 1px solid #3079ed;
+    width: 128px;
+    
+}

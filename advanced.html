@@ -1,51 +1,50 @@
 <!DOCTYPE html>
+
+<meta charset="UTF-8">
+
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css"> 
-        <style>
-            #vert {
-                display:inline-block;
-                text-align:left;
-            }
 
-            .adv-bar {
-                height: 20px;
-                width: 400px;
-                margin-inline-start:150px;
-                margin-top:25px;
-            }
-
-            .adv-prompt {
-                padding-top:40px;
-                display:inline-block;
-                width:200px;
-            }
-            
-        </style>
     </head>
     <body>   
-        <div class="button-group" id = "nav-buttons">
-            <form>
-                <button type="submit" formaction="search.html">Search</button>
-                <button type="submit" formaction="images.html">Image Search</button>
-            </form>
+        <div class="row" id="grey-row">
+            <div class="column">
+                <div class ="left-column" id="mini-logo">
+                    <span id="blue">G</span><span id="red">o</span><span id="yellow">o</span
+                        ><span id="blue">g</span><span id="green">l</span><span id="red">e</span>
+            
+                </div>
+            </div>
+            <div class="column">
+                <form class="button-group" id = "nav-buttons">
+                    <button type="submit" formaction="search.html">Search</button>
+                    <button type="submit" formaction="images.html">Image Search</button>
+                </form>
+            </div>
 
         </div>
-        <div class="logo">
-            <span id="blue">G</span><span id="red">o</span><span id="yellow">o</span
-                ><span id="blue">g</span><span id="green">l</span><span id="red">e</span>
+
+        <div id="adv-logo">
+            Advanced Search
         </div>
-        <div>
-            Find pages with...
+
+        <div id="thin-grey-line">
+
         </div>
+
+        
         <form id="vert" action="https://google.com/search">
+            <div id="prompt-title">
+                Find pages with...
+            </div>
             <div>
                 <label for="as_q" class="adv-prompt">all these words:</label>
                 <input class="adv-bar" type="text" name="as_q">
             </div>
             <div>
                 <label for="as_epq" class="adv-prompt">this exact word or phrase:</label>
-                <input class="adv-bar" id="vert" type="text" name="as_epq">
+                <input class="adv-bar" type="text" name="as_epq">
             </div>
             <div>
                 <label for="as_oq" class="adv-prompt">any of these words:</label>
@@ -55,7 +54,8 @@
                 <label for="as_eq" class="adv-prompt">none of these words:</label>
                 <input class="adv-bar" type="text" name="as_eq">
             </div>
-            <input type="submit" value="Advanced Search">
+            <input id="blue-button" type="submit" value="Advanced Search">
             
         </form>
     </body>
+</html>
